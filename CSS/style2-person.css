@@ -5,10 +5,6 @@ body {
     font-style: italic;
 }
 
-.warp{
-    margin: 0 auto;
-}
-
 .banner{
     border: 1px solid #707070; 
     height: 960px;
@@ -19,7 +15,6 @@ body {
     align-items: center;
 }
 .banner-content{
-    width: 304px;
     color: #fff;
     font-weight: 700;
 }
@@ -75,7 +70,7 @@ body {
 }
 
 .experience li::before {
-    display: inline-block;
+    display: inline-block; /*不另起一行的區塊元素*/
     content: '';
     width: 22px;
     height: 22px;
@@ -92,58 +87,71 @@ body {
     color: white;   
 }
 
-.brand h2{
+.brand-contant{
+    text-align: center;
+    width: 1200px;
+    color: white;   
+    margin: 0 auto;
+}
+
+.brand-contant ul{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 40px 24px;
+}
+
+.brand-contant h2{
     font-size: 64px;
     line-height: 84px;
     margin-bottom: 12px;
 }
 
-.brand p{
+.brand-contant p{
     margin: 0px auto 68px auto;
     width: 320px;
     font-size: 20px;
     line-height: 30px;
 }
 
-.brand img{
+/* .brand-contant img{
     width: 588px;
 }
 
-.brand .img1{
-    margin: 0px auto 40px auto;
+.brand-contant .img1{
     width: 792px;
-    display: block;
-}
+} */
 
 .work{
     padding-top: 56px;
     padding-bottom: 144px;
-    text-align: center;
+
 }
 
-.work h2{
+.work-contant{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.work-contant h2{
     font-size: 64px;
     line-height: 84px;
     margin-bottom: 16px;
 }
 
-.work p{
+.work-contant p{
     font-size: 20px;
     line-height: 30px;
 }
 
-.work-list{
-    margin: 0 auto;
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-}
-.work-list p{
+
+.work-contant li p{
     font-size: 20px;
     line-height: 42px;
 }
 
-.work-list img{
+.work-contant li img{
     margin-bottom: 16px;
 }
 
